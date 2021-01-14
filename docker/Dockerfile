@@ -13,6 +13,7 @@ RUN git clone https://gitee.com/lxk0301/jd_scripts.git /scripts \
         && cd /scripts \
         && git checkout master \
         && mkdir logs \
+        && npm config set registry https://registry.npm.taobao.org \
         && npm install \
         && cd /tmp \
         && npm install request
